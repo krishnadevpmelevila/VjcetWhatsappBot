@@ -1,6 +1,3 @@
-2022/08/26-13:54:02.372 7d77 Reusing MANIFEST /home/krishnadev/works/vjcet_seat_whatsapp/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
-2022/08/26-13:54:02.372 7d77 Recovering log #69
-2022/08/26-13:54:02.463 7d77 Reusing old log /home/krishnadev/works/vjcet_seat_whatsapp/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000069.log 
-2022/08/26-13:54:02.463 7d77 Delete type=2 #66
-2022/08/26-13:54:02.491 7d77 Delete type=2 #70
-2022/08/26-13:54:02.491 7d77 Delete type=2 #67
+2022/08/26-14:58:25.014 85ae Reusing MANIFEST /home/krishnadev/works/vjcet_seat_whatsapp/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/08/26-14:58:25.014 85ae Recovering log #69
+2022/08/26-14:58:25.048 85ae Reusing old log /home/krishnadev/works/vjcet_seat_whatsapp/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000069.log 

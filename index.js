@@ -43,11 +43,10 @@ client.on('message', message => {
         
         const spawn = require("child_process").spawn;
         const pythonProcess = spawn('python3', ["scrap.py"]);
-        console.log(pythonProcess);
         pythonProcess.stdout.on('data', (data) => {
             fs.unlinkSync('seat.pdf', (err) => {
                 if (err) {
-                    console.error(err)
+                    console.error("err")
                     return
                 }
             })
