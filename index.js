@@ -45,7 +45,7 @@ client.on('message', message => {
 client.on('message', async message => {
     // Seat scrapping
 
-    if (message.body.toLowerCase() === '!seat' || message.body.toLocaleLowerCase === "! seat") {
+    if (message.body.toLowerCase() === '!seat' || message.body.toLowerCase === "! seat") {
         const spawn = require("child_process").spawn;
         const pythonProcess = spawn('python3', ["scrap.py"]);
         pythonProcess.stdout.on('data', (data) => {
@@ -73,13 +73,13 @@ client.on('message', async message => {
 
     }
     // help command
-    if (message.body.toLowerCase() == '!help'|| message.body.toLocaleLowerCase === "! help") {
+    if (message.body.toLowerCase() == '!help'|| message.body.toLowerCase === "! help") {
         helpCommand(message)
     }
 
     if (message.hasMedia) {
         console.log(message.body);
-        if (message.body.toLocaleLowerCase === "!sticker" || message.body.toLocaleLowerCase === "! sticker") {
+        if (message.body.toLocaleLowerCase === "!sticker" || message.body.toLowerCase === "! sticker") {
             const media = await message.downloadMedia();
             stickercommand(message,media,client)
         }
