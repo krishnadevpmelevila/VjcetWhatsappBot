@@ -1,11 +1,6 @@
-2022/08/26-12:18:01.667 6393 Reusing MANIFEST /home/krishnadev/works/vjcet_seat_whatsapp/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
-2022/08/26-12:18:01.667 6393 Recovering log #64
-2022/08/26-12:18:02.086 6393 Reusing old log /home/krishnadev/works/vjcet_seat_whatsapp/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000064.log 
-2022/08/26-12:18:22.082 63c9 Level-0 table #70: started
-2022/08/26-12:18:22.262 63c9 Level-0 table #70: 1166625 bytes OK
-2022/08/26-12:18:22.430 63c9 Delete type=0 #64
-2022/08/26-12:18:22.973 6409 Compacting 1@1 + 2@2 files
-2022/08/26-12:18:23.441 6409 Generated table #71@1: 41783 keys, 2253518 bytes
-2022/08/26-12:18:23.747 6409 Generated table #72@1: 17252 keys, 531888 bytes
-2022/08/26-12:18:23.747 6409 Compacted 1@1 + 2@2 files => 2785406 bytes
-2022/08/26-12:18:23.944 6409 compacted to: files[ 0 0 2 0 0 0 0 ]
+2022/08/26-13:54:02.372 7d77 Reusing MANIFEST /home/krishnadev/works/vjcet_seat_whatsapp/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/08/26-13:54:02.372 7d77 Recovering log #69
+2022/08/26-13:54:02.463 7d77 Reusing old log /home/krishnadev/works/vjcet_seat_whatsapp/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000069.log 
+2022/08/26-13:54:02.463 7d77 Delete type=2 #66
+2022/08/26-13:54:02.491 7d77 Delete type=2 #70
+2022/08/26-13:54:02.491 7d77 Delete type=2 #67

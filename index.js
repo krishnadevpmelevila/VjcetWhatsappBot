@@ -23,7 +23,7 @@ client.on('ready', () => {
         res.end();
     }
     ).listen(3000);
-    
+
 });
 client.on('message', message => {
     console.log(message.body);
@@ -42,7 +42,7 @@ client.on('message', message => {
         console.log(message);
         
         const spawn = require("child_process").spawn;
-        const pythonProcess = spawn('python', ["scrap.py"]);
+        const pythonProcess = spawn('python3', ["scrap.py"]);
         console.log(pythonProcess);
         pythonProcess.stdout.on('data', (data) => {
             fs.unlinkSync('seat.pdf', (err) => {
