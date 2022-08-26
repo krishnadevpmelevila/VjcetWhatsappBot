@@ -25,9 +25,7 @@ client.on('ready', () => {
     ).listen(3000);
 
 });
-client.on('message', message => {
-    console.log(message.body);
-});
+
 client.on('message', message => {
     if (message.body === '!ping') {
 
@@ -39,8 +37,6 @@ client.on('message', message => {
 client.on('message', message => {
 
     if (message.body === '!seat') {
-        console.log(message);
-        
         const spawn = require("child_process").spawn;
         const pythonProcess = spawn('python3', ["scrap.py"]);
         pythonProcess.stdout.on('data', (data) => {
