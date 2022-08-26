@@ -17,4 +17,4 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
           key: ${{ secrets.PASS }}
-          script: sh deploy.sh
+          script: bash deploy.sh
