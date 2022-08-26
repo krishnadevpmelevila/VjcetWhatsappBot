@@ -14,6 +14,16 @@ client.on('qr', qr => {
 
 client.on('ready', () => {
     console.log('Client is ready!');
+    // create a web server
+    http.createServer(function (req, res) {
+        // send the current session to the page
+        res.writeHead(200, { 'Content-Type': 'text/html' });
+        res.write('<h1>Session</h1>');
+        res.write('<pre>' + JSON.stringify(sessionData) + '</pre>');
+        res.end();
+    }
+    ).listen(3000);
+    
 });
 client.on('message', message => {
     console.log(message.body);
