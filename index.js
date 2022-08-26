@@ -78,8 +78,7 @@ client.on('message', async message => {
     }
 
     if (message.hasMedia) {
-        console.log(message.body);
-        if (message.body.toLowerCase === "!sticker" || message.body.toLowerCase === "! sticker") {
+        if (message.body ==="!sticker" || message.body === "! sticker") {
             const media = await message.downloadMedia();
             stickercommand(message,media,client)
         }
