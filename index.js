@@ -1,7 +1,11 @@
 const qrcode = require('qrcode-terminal');
-const fs = require('fs')
 const http = require('http');
-const { Client, LocalAuth,MessageMedia } = require('whatsapp-web.js');
+const fs = require('fs')
+const { Client, LocalAuth, MessageMedia } = require('whatsapp-web.js');
+const { helpCommand } = require('./Modules/help');
+const { seat } = require('./Modules/seat');
+const { stickercommand } = require('./Modules/sticker');
+
 let sessionData;
 const client = new Client({
     authStrategy: new LocalAuth()
@@ -28,15 +32,20 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.body === '!ping') {
-
-
+        message.reply('pong');
     }
 });
 
 
-client.on('message', message => {
 
-    if (message.body === '!seat') {
+
+
+
+
+client.on('message', async message => {
+    // Seat scrapping
+
+    if (message.body.toLowerCase() === '!seat') {
         const spawn = require("child_process").spawn;
         const pythonProcess = spawn('python3', ["scrap.py"]);
         pythonProcess.stdout.on('data', (data) => {
@@ -55,13 +64,33 @@ client.on('message', message => {
                 file.on("finish", () => {
                     file.close();
                     const media = MessageMedia.fromFilePath('seat.pdf');
-                    client.sendMessage(chatId= message.from, media);
+                    seat(message, client, media)
                 });
-                
+
             });
         });
 
 
     }
+    // help command
+    if (message.body.toLowerCase() == '!help') {
+        helpCommand(message)
+    }
+
+    if (message.hasMedia) {
+        console.log(message.body);
+        if (message.body === "!sticker") {
+            const media = await message.downloadMedia();
+            stickercommand(message,media,client)
+        }
+    }
+
+
+
+    // if (message.body.toLocaleLowerCase() === '!sticker') {
+    //     const sticker = MessageMedia.fromFilePath('file.jpg');
+    //     client.sendMessage(chatId = message.from, sticker, { sendMediaAsSticker: true });
+    // }
+
 })
 client.initialize();
