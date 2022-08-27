@@ -77,7 +77,7 @@ client.on('message', async message => {
 
     }
     // help command
-    if (message.body.toLowerCase() == '!help' || message.body.toLowerCase() == "! help") {
+    if (message.body.toLowerCase() == '!help' || message.body.toLowerCase() == "! help" || message.body.toLowerCase()=='hi'|| message.body.toLowerCase()=='hello') {
         helpCommand(message)
     }
     // sticker
