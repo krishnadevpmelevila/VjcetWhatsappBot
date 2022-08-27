@@ -1,5 +1,4 @@
 const axios = require("axios");
-// dotenv
 require('dotenv').config();
 function quotes(message) {
     try {

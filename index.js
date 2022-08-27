@@ -6,6 +6,7 @@ const { helpCommand } = require('./Modules/help');
 const { seat } = require('./Modules/seat');
 const { stickercommand } = require('./Modules/sticker');
 const { quotes } = require('./Modules/quotes');
+const { joke } = require('./Modules/joke');
 // const { goodmorning } = require('./Modules/wish');
 
 let sessionData;
@@ -90,6 +91,9 @@ client.on('message', async message => {
     // quotes
     if (message.body.toLowerCase() == "!quotes" || message.body.toLowerCase() == "! quotes" || message.body.toLowerCase()=="!quote" || message.body.toLowerCase()=="! quote") {
         quotes(message)
+    }
+    if(message.body.toLowerCase()=='!jokes'||message.body.toLowerCase()=='! jokes' || message.body.toLowerCase()=='!joke'||message.body.toLowerCase()=='! joke'){
+       joke(message)
     }
 
 })
