@@ -88,7 +88,7 @@ client.on('message', async message => {
         }
     }
     // quotes
-    if (message.body.toLowerCase() == "!quotes" || message.body.toLowerCase() == "! quotes") {
+    if (message.body.toLowerCase() == "!quotes" || message.body.toLowerCase() == "! quotes" || message.body.toLowerCase=="!quote" || message.body.toLowerCase=="! quote") {
         quotes(message)
     }
 
