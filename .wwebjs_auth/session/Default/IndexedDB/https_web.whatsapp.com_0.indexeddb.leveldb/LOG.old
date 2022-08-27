@@ -1,6 +1,56 @@
-2022/08/26-13:54:02.372 7d77 Reusing MANIFEST /home/krishnadev/works/vjcet_seat_whatsapp/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
-2022/08/26-13:54:02.372 7d77 Recovering log #69
-2022/08/26-13:54:02.463 7d77 Reusing old log /home/krishnadev/works/vjcet_seat_whatsapp/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000069.log 
-2022/08/26-13:54:02.463 7d77 Delete type=2 #66
-2022/08/26-13:54:02.491 7d77 Delete type=2 #70
-2022/08/26-13:54:02.491 7d77 Delete type=2 #67
+2022/08/27-15:37:14.112 14c77 Reusing MANIFEST /home/krishnadev/works/VjcetWhatsappBot/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/08/27-15:37:14.113 14c77 Recovering log #1844
+2022/08/27-15:37:14.136 14c77 Reusing old log /home/krishnadev/works/VjcetWhatsappBot/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/001844.log 
+2022/08/27-15:37:35.273 14c7f Level-0 table #1874: started
+2022/08/27-15:37:35.406 14c7e Current memtable full; waiting...
+2022/08/27-15:37:35.596 14c7f Level-0 table #1874: 1151149 bytes OK
+2022/08/27-15:37:35.980 14c7f Delete type=0 #1844
+2022/08/27-15:37:35.980 14c7f Level-0 table #1876: started
+2022/08/27-15:37:36.049 14c7f Level-0 table #1876: 971188 bytes OK
+2022/08/27-15:37:36.155 14c7f Delete type=0 #1873
+2022/08/27-15:37:36.205 14c77 Compacting 2@0 + 0@1 files
+2022/08/27-15:37:36.287 14c77 Generated table #1877@0: 25226 keys, 1395059 bytes
+2022/08/27-15:37:36.321 14c77 Generated table #1878@0: 22 keys, 4230 bytes
+2022/08/27-15:37:36.406 14c77 Generated table #1879@0: 2511 keys, 77763 bytes
+2022/08/27-15:37:36.406 14c77 Compacted 2@0 + 0@1 files => 1477052 bytes
+2022/08/27-15:37:36.512 14c77 compacted to: files[ 0 3 33 0 0 0 0 ]
+2022/08/27-15:37:36.669 14c77 Compacting 1@1 + 6@2 files
+2022/08/27-15:37:36.762 14c77 Generated table #1880@1: 11805 keys, 2187554 bytes
+2022/08/27-15:37:36.854 14c77 Generated table #1881@1: 37650 keys, 2167881 bytes
+2022/08/27-15:37:36.999 14c77 Generated table #1882@1: 102381 keys, 2253317 bytes
+2022/08/27-15:37:37.412 14c77 Generated table #1883@1: 99734 keys, 2251267 bytes
+2022/08/27-15:37:37.884 14c77 Generated table #1884@1: 84976 keys, 1934539 bytes
+2022/08/27-15:37:37.884 14c77 Compacted 1@1 + 6@2 files => 10794558 bytes
+2022/08/27-15:37:38.018 14c77 compacted to: files[ 0 2 32 0 0 0 0 ]
+2022/08/27-15:37:38.018 14c77 Delete type=2 #1861
+2022/08/27-15:37:38.018 14c77 Delete type=2 #1849
+2022/08/27-15:37:38.018 14c77 Delete type=2 #1850
+2022/08/27-15:37:38.018 14c77 Delete type=2 #1874
+2022/08/27-15:37:38.018 14c77 Delete type=2 #1859
+2022/08/27-15:37:38.018 14c77 Delete type=2 #1860
+2022/08/27-15:37:38.018 14c77 Delete type=2 #1879
+2022/08/27-15:37:38.018 14c77 Delete type=2 #1858
+2022/08/27-15:37:38.018 14c77 Delete type=2 #1876
+2022/08/27-15:37:38.020 14c77 Compacting 1@1 + 9@2 files
+2022/08/27-15:37:38.157 14c77 Generated table #1885@1: 28376 keys, 2230444 bytes
+2022/08/27-15:37:38.301 14c77 Generated table #1886@1: 25254 keys, 2298200 bytes
+2022/08/27-15:37:38.478 14c77 Generated table #1887@1: 30546 keys, 2281931 bytes
+2022/08/27-15:37:38.741 14c77 Generated table #1888@1: 70223 keys, 2259394 bytes
+2022/08/27-15:37:39.037 14c77 Generated table #1889@1: 7060 keys, 2167744 bytes
+2022/08/27-15:37:39.603 14c77 Generated table #1890@1: 2366 keys, 2159357 bytes
+2022/08/27-15:37:40.201 14c77 Generated table #1891@1: 2364 keys, 2161303 bytes
+2022/08/27-15:37:40.442 14c77 Generated table #1892@1: 1964 keys, 2151971 bytes
+2022/08/27-15:37:40.680 14c77 Generated table #1893@1: 2579 keys, 2157511 bytes
+2022/08/27-15:37:40.872 14c77 Generated table #1894@1: 416 keys, 228440 bytes
+2022/08/27-15:37:40.872 14c77 Compacted 1@1 + 9@2 files => 20096295 bytes
+2022/08/27-15:37:41.324 14c77 compacted to: files[ 0 1 33 0 0 0 0 ]
+2022/08/27-15:37:41.324 14c77 Delete type=2 #1869
+2022/08/27-15:37:41.324 14c77 Delete type=2 #1864
+2022/08/27-15:37:41.324 14c77 Delete type=2 #1877
+2022/08/27-15:37:41.324 14c77 Delete type=2 #1863
+2022/08/27-15:37:41.324 14c77 Delete type=2 #1870
+2022/08/27-15:37:41.324 14c77 Delete type=2 #1867
+2022/08/27-15:37:41.324 14c77 Delete type=2 #1868
+2022/08/27-15:37:41.324 14c77 Delete type=2 #1866
+2022/08/27-15:37:41.324 14c77 Delete type=2 #1865
+2022/08/27-15:37:41.324 14c77 Delete type=2 #1862

@@ -1,7 +1,3 @@
-const fs = require('fs')
-const http = require('http');
-const { MessageMedia } = require('whatsapp-web.js');
-
 function seat(message,client,media) {
     try{
         client.sendMessage(chatId = message.from, 'All the best for your exam Makkkalleee!!');

@@ -5,6 +5,8 @@ const { Client, LocalAuth, MessageMedia } = require('whatsapp-web.js');
 const { helpCommand } = require('./Modules/help');
 const { seat } = require('./Modules/seat');
 const { stickercommand } = require('./Modules/sticker');
+const { quotes } = require('./Modules/quotes');
+// const { goodmorning } = require('./Modules/wish');
 
 let sessionData;
 const client = new Client({
@@ -43,9 +45,11 @@ client.on('message', message => {
 
 
 client.on('message', async message => {
-    // Seat scrapping
 
-    if (message.body.toLowerCase() === '!seat' || message.body.toLowerCase === "! seat") {
+    // goodmorning(message,client)
+
+    // Seat scrapping  
+    if (message.body.toLowerCase() == '!seat' || message.body.toLowerCase() == "! seat") {
         const spawn = require("child_process").spawn;
         const pythonProcess = spawn('python3', ["scrap.py"]);
         pythonProcess.stdout.on('data', (data) => {
@@ -73,17 +77,20 @@ client.on('message', async message => {
 
     }
     // help command
-    if (message.body.toLowerCase() == '!help'|| message.body.toLowerCase === "! help") {
+    if (message.body.toLowerCase() == '!help' || message.body.toLowerCase() == "! help") {
         helpCommand(message)
     }
-
+    // sticker
     if (message.hasMedia) {
-        if (message.body ==="!sticker" || message.body === "! sticker") {
+        if (message.body.toLowerCase() == "!sticker" || message.body.toLowerCase() == "! sticker") {
             const media = await message.downloadMedia();
-            stickercommand(message,media,client)
+            stickercommand(message, media, client)
         }
     }
-
+    // quotes
+    if (message.body.toLowerCase() == "!quotes" || message.body.toLowerCase() == "! quotes") {
+        quotes(message)
+    }
 
 })
 client.initialize();

@@ -1,0 +1,9 @@
+*Hi, My name is _Kumarettan!_*
+I am here to assist you.
+
+You can use the following commands (Don't forget the exclamatory(!) mark before each commands):
+
+1. *!seat* - To get seating arrangement
+2. *!sticker* - Send an image with !sticker as caption
+3. *!quotes* - To get random quotes
+4. *!help* - To view this help
