@@ -8,4 +8,5 @@ You can use the following commands (Don't forget the exclamatory(!) mark before 
  3.*!seat* - To get seating arrangement
  4.*!sticker* - Send an image with !sticker as caption
  5.*!quote* - To get random quotes
+ 
  6.*!help* - To view this help
