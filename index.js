@@ -6,6 +6,7 @@ const { helpCommand } = require('./Modules/help');
 const { seat } = require('./Modules/seat');
 const { stickercommand } = require('./Modules/sticker');
 const { quotes } = require('./Modules/quotes');
+const { timetable, fulltimeTable } = require('./Modules/timeTable');
 // const { goodmorning } = require('./Modules/wish');
 
 let sessionData;
@@ -79,6 +80,16 @@ client.on('message', async message => {
     // help command
     if (message.body.toLowerCase() == '!help' || message.body.toLowerCase() == "! help" || message.body.toLowerCase()=='hi'|| message.body.toLowerCase()=='hello') {
         helpCommand(message)
+    }
+
+    // timetable
+    if (message.body.toLowerCase().startsWith('!p') ){
+        var p = message.body.split('')[2];
+        period = timetable(p);
+        message.reply(period);    
+    }
+    if (message.body.toLowerCase().startsWith('!tt') || message.body.toLowerCase().startsWith('! tt')) {
+       fulltimeTable(message,client);   
     }
     // sticker
     if (message.hasMedia) {

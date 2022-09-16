@@ -1,0 +1,45 @@
+[
+    {
+        "1": "LSD",
+        "2": "DS",
+        "3": "D&E",
+        "4": "DSM",
+        "5": "SE",
+        "6": "LSD",
+        "7": "OOPJ"
+
+    }, {
+        "1": "DS",
+        "2": "DSM",
+        "3": "LSD",
+        "4": "OOPJ",
+        "5": "DS/OOPJ LAB",
+        "6": "DS/OOPJ LAB",
+        "7": "DS/OOPJ LAB"
+    }, {
+        "1": "D&E",
+        "2": "LSD",
+        "3": "DSM",
+        "4": "DS",
+        "5": "DS/OOPJ LAB",
+        "6": "DS/OOPJ LAB",
+        "7": "DS/OOPJ LAB"
+    }, {
+        "1": "OOPJ",
+        "2": "DS",
+        "3": "DSM",
+        "4": "LSD",
+        "5": "DS",
+        "6": "OOPJ",
+        "7": "LSD"
+    }, {
+        "1": "DSM",
+        "2": "DS",
+        "3": "OOPJ",
+        "4": "MENTORING",
+        "5": "SE",
+        "6": "LSD",
+        "7": "OOPJ"
+    }
+
+]
