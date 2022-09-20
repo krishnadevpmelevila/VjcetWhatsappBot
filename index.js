@@ -37,6 +37,9 @@ client.on('message', message => {
     if (message.body === '!ping') {
         message.reply('pong');
     }
+    if(message.body.toLowerCase()==='!about'|| message.body.toLowerCase() == "! about"){
+        message.reply("Hi, I am kumarettan, My developer is Krishnadev P Melevila and his friends of CSEA 2021-25 batch,VJCET. If you spot any bug on Kumarettan, Please inform us through +918089188971 or mail to 21rr172@vjcet.org")
+    }
 });
 
 
