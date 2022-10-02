@@ -7,5 +7,5 @@ function stickerCommand(message,media,client) {
 }
 
 
-
+    
 module.exports.stickercommand = stickerCommand

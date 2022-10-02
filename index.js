@@ -7,6 +7,7 @@ const { seat } = require('./Modules/seat');
 const { stickercommand } = require('./Modules/sticker');
 const { quotes } = require('./Modules/quotes');
 const { timetable, fulltimeTable } = require('./Modules/timeTable');
+const { tts } = require('./Modules/tts');
 // const { goodmorning } = require('./Modules/wish');
 
 let sessionData;
@@ -91,7 +92,7 @@ client.on('message', async message => {
         period = timetable(p);
         message.reply(period);    
     }
-    if (message.body.toLowerCase().startsWith('!tt') || message.body.toLowerCase().startsWith('! tt')) {
+    if (message.body.toLowerCase()=="!tt" || message.body.toLowerCase()=="!tt" ) {
        fulltimeTable(message,client);   
     }
     // sticker
@@ -105,6 +106,12 @@ client.on('message', async message => {
     if (message.body.toLowerCase() == "!quotes" || message.body.toLowerCase() == "! quotes" || message.body.toLowerCase()=="!quote" || message.body.toLowerCase()=="! quote") {
         quotes(message)
     }
+    if (message.body.toLowerCase().startsWith('!tts')){
+        var text = message.body.split('!tts')[1];
+        tts(message,client,text)
+    }
+
+    
 
 })
 client.initialize();
